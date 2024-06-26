@@ -1,0 +1,80 @@
+@import "vars.css";
+
+body,
+body * {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(73, 79, 224, 1);
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  transition: width 0.2s;
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgba(73, 79, 224, 1);
+  -webkit-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+  -ms-transition: width 0.2s;
+  -o-transition: width 0.2s;
+}
+
+.link:not(.disabled):hover::after {
+  width: 100%;
+}
+
+.link.disabled {
+  color: #919eabcc;
+  cursor: not-allowed;
+}
+
+.v-enter-active {
+  transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-from {
+  opacity: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__footer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.show {
+  animation: showIn 0.3s ease both;
+}
+
+@keyframes showIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
