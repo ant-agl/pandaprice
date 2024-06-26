@@ -32,6 +32,10 @@ export default {
   justify-content: center;
   gap: 15px;
   color: #fff;
+  @media (max-width: 700px) {
+    padding: 6px 15px;
+    height: 35px;
+  }
 
   :deep(img) {
     min-width: 18px;
@@ -39,7 +43,6 @@ export default {
   }
 
   &:hover {
-    // background-color: var(--main-color-hover);
     box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.2) inset;
   }
 

@@ -38,6 +38,10 @@ export default {
     padding: 20px;
     border-radius: 30px;
     display: flex;
+    @media (max-width: 700px) {
+      padding: 10px;
+      border-radius: 20px;
+    }
   }
   &__cards {
     display: flex;

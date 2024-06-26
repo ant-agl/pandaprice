@@ -27,6 +27,10 @@
     padding: 40px 70px;
     position: relative;
 
+    @media (max-width: 700px) {
+      padding: 20px 20px;
+    }
+
     :deep(.title) {
       font-family: "Jura";
       font-weight: 600;

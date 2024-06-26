@@ -39,11 +39,18 @@ export default {
 
   &__img {
     width: 70px;
+
+    @media (max-width: 700px) {
+      width: 40px;
+    }
   }
   &__name {
     color: #fff;
     font-family: "Jura", sans-serif;
     font-size: 40px;
+    @media (max-width: 700px) {
+      font-size: 25px;
+    }
   }
 }
 .list {
@@ -62,9 +69,16 @@ export default {
   align-items: center;
   justify-content: center;
   transition: 0.2s;
+  @media (max-width: 700px) {
+    width: 40px;
+    height: 40px;
+  }
 
   &__img {
     width: 25px;
+    @media (max-width: 700px) {
+      width: 20px;
+    }
   }
 
   &:hover {

@@ -28,9 +28,18 @@ export default {
   flex-direction: column;
   gap: 15px;
   background-color: rgba(28, 28, 30, 1);
+  @media (max-width: 700px) {
+    width: 170px;
+    min-width: 170px;
+    padding: 10px;
+    border-radius: 15px;
+  }
 
   &__img {
     border-radius: 15px;
+    @media (max-width: 700px) {
+      border-radius: 10px;
+    }
   }
   &__price {
     color: #fff;
